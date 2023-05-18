@@ -36,7 +36,7 @@ function validateForm() {
 
 //Function to show data from local storage
 function showData() {
-  var peopleList;
+  let peopleList;
   if (localStorage.getItem("peopleList") == null) {
     peopleList = [];
   } else {
@@ -74,7 +74,7 @@ function AddData() {
     const address = document.getElementById("address").value;
     const email = document.getElementById("email").value;
 
-    var peopleList;
+    let peopleList;
     if (localStorage.getItem("peopleList") == null) {
       peopleList = [];
     } else {
@@ -118,8 +118,8 @@ function updateData(index) {
   document.getElementById("submit").style.display = "none";
   document.getElementById("Update").style.display = "block";
 
-  //if state to delete
-  var peopleList;
+  //if statement to delete
+   peopleList;
   if (localStorage.getItem("peopleList") == null) {
     peopleList = [];
   } else {
